@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src data:; font-src 'none'; media-src 'none'; connect-src 'none'; script-src 'none'; worker-src 'none'; child-src 'none'; frame-src 'none'; object-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="presskeep-record" content="eyJhdXRob3Jfa2V5IjoiZWQyNTUxOTp6RGpnZFV4QTlUNlNUVGFLN3E2OGF6Z3U0Y2ZMaEJxeFhnNVBzVFhFZjcyUEQiLCJjcmVhdGVkX2F0IjoxNzkwMzk1NzQ2LCJwcm90b2NvbCI6InByZXNza2VlcC8xIiwicHVibGljYXRpb25faWQiOiJkaWQ6cHJlc3NrZWVwOno2TWtzQndnNUNRYW5kdnZhNTlwV2Y2UnFuVDRTRWNZYmpDdE42Sm9Ib0NnMkZBYiIsInNlcXVlbmNlIjoxLCJzb3VyY2Vfc2hhMjU2IjoiNDI2NDU5ZGI1ZmJjYmI1M2ZlMTBlMGU3ZWE1MDlmNDNmODcyZDY1YjBmNzY2NTVmZjNiNTFhODM3NGZhZGU0YiIsInRpdGxlIjoiVGhlIHdvcmsgaXMgbm90IHRoZSBhZGRyZXNzIn0">
+<meta name="presskeep-signature" content="ed25519:DY_cH9yzxM97AlfGnVyskJjFf_vuIPaNVVOxKYJxOE0beRGjzimjCzu6-v5EEx6hyi8FfMvDZRScQpceaxmqCQ">
+<title>The work is not the address</title>
+<style>:root {
+  color-scheme: light;
+  --ink: #1d1f1a;
+  --muted: #666b61;
+  --paper: #f5f1e6;
+  --rule: #cbc6b8;
+  --accent: #334f3d;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.zine {
+  width: min(46rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 4rem 0 6rem;
+}
+.masthead {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--ink);
+}
+.label,
+.metadata,
+.verification {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+.label {
+  margin: 0 0 2rem;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+h1 {
+  max-width: 15ch;
+  margin: 0;
+  font-size: clamp(2.8rem, 9vw, 5.8rem);
+  font-weight: 400;
+  letter-spacing: -.045em;
+  line-height: .95;
+}
+.metadata {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: .8rem 2rem;
+  margin: 2rem 0 0;
+  font-size: .72rem;
+}
+.metadata div { min-width: 0; }
+.metadata dt {
+  margin-bottom: .28rem;
+  color: var(--muted);
+  font-size: .62rem;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.metadata dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+article {
+  padding: 2.5rem 0 3rem;
+  font-size: 1.12rem;
+  line-height: 1.72;
+}
+article > :first-child { margin-top: 0; }
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  max-width: none;
+  margin: 2.2em 0 .6em;
+  font-weight: 500;
+  letter-spacing: -.02em;
+  line-height: 1.12;
+}
+article h1 { font-size: 2.35rem; }
+article h2 { font-size: 1.9rem; }
+article h3 { font-size: 1.5rem; }
+article p,
+article ul,
+article ol { margin: 1.2em 0; }
+article li + li { margin-top: .45em; }
+article blockquote {
+  margin: 2rem 0;
+  padding: .1rem 0 .1rem 1.4rem;
+  color: #3f443c;
+  font-size: 1.25rem;
+  border-left: 4px solid var(--accent);
+}
+article pre {
+  overflow-x: auto;
+  padding: 1.1rem;
+  font-size: .84rem;
+  line-height: 1.55;
+  background: #e8e3d6;
+  border: 1px solid var(--rule);
+}
+article code {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+article a {
+  color: var(--accent);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .15em;
+}
+article hr {
+  width: 30%;
+  margin: 3rem auto;
+  border: 0;
+  border-top: 1px solid var(--ink);
+}
+.verification {
+  padding-top: 1.5rem;
+  color: var(--muted);
+  font-size: .7rem;
+  line-height: 1.55;
+  border-top: 1px solid var(--rule);
+}
+.verification strong { color: var(--ink); }
+@media (max-width: 36rem) {
+  .zine { padding-top: 2rem; }
+  article { font-size: 1.03rem; }
+}</style>
+</head>
+<body>
+<!-- This document is inert and cryptographically signed. Editing any byte invalidates it. -->
+<template id="presskeep-source" data-encoding="base64url">IyBUaGUgd29yayBpcyBub3QgdGhlIGFkZHJlc3MKCkEgcHVibGljYXRpb24gc2hvdWxkIGJlIHNvbWV0aGluZyB5b3UgY2FuIGhvbGQgb250by4gQSBmaWxlIHlvdSBjYW4gc2VuZCB0byBhIGZyaWVuZCwgc2F2ZSBvbiBhIGRyaXZlLCBvciBmaW5kIHNvbWV3aGVyZSBuZXcuCgpUaGUgd29yZHMgYXJlIHlvdXJzLiBUaGUgY29weSBzaG91bGQgYmUsIHRvby4KCiMjIE9uZSBmaWxlLiBNYW55IHBvc3NpYmlsaXRpZXMuCgpUaGlzIGlzIGEgcmVhbCBzaWduZWQgUHJlc3NrZWVwIGRvY3VtZW50LiBTYXZlIGl0IHRvIHlvdXIgY29tcHV0ZXIgYW5kIG9wZW4gaXQgaW4gYW4gb3JkaW5hcnkgYnJvd3Nlci4gSXRzIHRleHQsIHN0eWxpbmcsIGFuZCBwcm9vZiBvZiBhdXRob3JzaGlwIHRyYXZlbCB0b2dldGhlci4KCllvdSBjYW4gYWxzbyBvcGVuIGl0IGluIFByZXNza2VlcCB0byB2ZXJpZnkgdGhlIHNpZ25hdHVyZSBhbmQgY2hlY2sgdGhhdCBpdCBtYXRjaGVzIHRoZSBzYWZlIGRvY3VtZW50IHRlbXBsYXRlLgoKPiBBIGdvb2Qgc3RvcnkgZGVzZXJ2ZXMgYSBsaWZlIGJleW9uZCB0aGUgcGxhY2UgeW91IGZpcnN0IHB1Ymxpc2hlZCBpdC4KClRoaXMgc2FtcGxlIHVzZXMgYSBkZW1vbnN0cmF0aW9uIHB1YmxpY2F0aW9uIGlkZW50aXR5LiBJdCBpbGx1c3RyYXRlcyB0aGUgZmlsZSBmb3JtYXQ7IGl0IGlzIG5vdCBhIGZvbGxvdyBjb2RlIGZvciBhbiBhY3RpdmUgcHVibGljYXRpb24uCg</template>
+<main class="zine">
+<header class="masthead">
+<p class="label">PRESSKEEP / SIGNED DOCUMENT / VERSION 1</p>
+<h1>The work is not the address</h1>
+<dl class="metadata">
+<div><dt>Published</dt><dd><time datetime="2026-09-26T04:09:06Z">2026-09-26T04:09:06Z</time></dd></div>
+<div><dt>Protocol</dt><dd>presskeep/1</dd></div>
+<div><dt>Author key</dt><dd>ed25519:zDjgdUxA9T6STTaK7q68azgu4cfLhBqxXg5PsTXEf72PD</dd></div>
+<div><dt>Previous release</dt><dd>—</dd></div>
+</dl>
+</header>
+<article>
+<h1>The work is not the address</h1>
+<p>A publication should be something you can hold onto. A file you can send to a friend, save on a drive, or find somewhere new.</p>
+<p>The words are yours. The copy should be, too.</p>
+<h2>One file. Many possibilities.</h2>
+<p>This is a real signed Presskeep document. Save it to your computer and open it in an ordinary browser. Its text, styling, and proof of authorship travel together.</p>
+<p>You can also open it in Presskeep to verify the signature and check that it matches the safe document template.</p>
+<blockquote>
+<p>A good story deserves a life beyond the place you first published it.</p>
+</blockquote>
+<p>This sample uses a demonstration publication identity. It illustrates the file format; it is not a follow code for an active publication.</p>
+</article>
+<footer class="verification">
+<p><strong>Signed, self-contained, and safe to open.</strong> This file contains no executable code or external dependencies. Verify it with Presskeep before trusting its authorship or version.</p>
+</footer>
+</main>
+</body>
+</html>
