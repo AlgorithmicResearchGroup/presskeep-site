@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Install Presskeep on Linux, set up your desktop keyring, and verify your download." />
+  <title>Presskeep for Linux — Installation</title>
+  <link rel="canonical" href="https://algorithmicresearchgroup.github.io/presskeep-site/linux.html" />
+  <link rel="icon" type="image/svg+xml" href="./assets/presskeep-icon.svg" />
+  <link rel="stylesheet" href="./styles.css" />
+  <style>
+    .install-guide { max-width: 820px; padding: 48px 24px 96px; margin: auto; }
+    .install-guide h1 { font-size: clamp(42px, 7vw, 72px); line-height: 1.06; margin: 42px 0 24px; }
+    .install-guide h2 { font-size: 28px; margin: 44px 0 16px; }
+    .install-guide p { line-height: 1.7; margin: 16px 0; }
+    .install-guide a { text-decoration: underline; text-underline-offset: 4px; }
+    .install-guide pre { padding: 20px; background: #e9e9df; border-radius: 12px; overflow-x: auto; font-size: 14px; line-height: 1.7; }
+    .install-guide code { overflow-wrap: anywhere; }
+    .install-guide .button { margin-top: 16px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="install-guide">
+    <a href="./">← Back to Presskeep</a>
+    <h1>Your words.<br />On Linux, too.</h1>
+    <p>Presskeep for Linux is included in the same US$9.99 one-time purchase as the Mac app. Your purchase page offers a Debian package and an AppImage for <strong>x86-64 (Intel or AMD)</strong> computers.</p>
+    <p>Use Ubuntu 22.04 or later, or Debian 12 or later, with a graphical desktop and an unlocked Secret Service keyring, such as GNOME Keyring. The release is built and tested on Ubuntu 22.04. Other Linux distributions may work with the AppImage. ARM Linux and Windows installers are not included.</p>
+    <a class="button button-dark" href="https://store.arg.studio/#presskeep">Buy Presskeep · US$9.99</a>
+
+    <h2>Debian &amp; Ubuntu</h2>
+    <p>Download the <code>.deb</code> from your purchase page. Open a terminal in your Downloads folder and run:</p>
+    <pre><code>sudo apt install ./Presskeep_0.1.0_amd64.deb</code></pre>
+    <p>This installs Presskeep and its desktop dependencies. Open Presskeep from your applications menu. If a keyring was just installed, log out and back in so it starts with your desktop session.</p>
+
+    <h2>AppImage</h2>
+    <p>Download the AppImage, open its properties, and allow it to run as a program. Double-click it, or run:</p>
+    <pre><code>chmod +x Presskeep_0.1.0_amd64.AppImage
+./Presskeep_0.1.0_amd64.AppImage</code></pre>
+    <p>AppImages still need a working desktop session and keyring. If your system reports a missing FUSE library, run it without FUSE using:</p>
+    <pre><code>./Presskeep_0.1.0_amd64.AppImage --appimage-extract-and-run</code></pre>
+
+    <h2>Keep your publication key safe</h2>
+    <p>Presskeep stores your private signing key in your desktop’s protected credential store. Unlock your login keyring before starting a publication. On minimal desktops, install and configure GNOME Keyring or another Secret Service provider. Presskeep does not replace a missing keyring with an unprotected key file.</p>
+    <p>After creating a publication, export an encrypted recovery copy and keep it somewhere separate from this computer. There is no Presskeep account or activation server to recover it for you.</p>
+
+    <h2>Verify your download</h2>
+    <p>Save the <a href="./assets/presskeep-SHA256SUMS.txt" download>SHA-256 checksums</a>, their <a href="./assets/presskeep-SHA256SUMS.txt.asc" download>signature</a>, and the <a href="./assets/presskeep-release-key.asc" download>release signing public key</a> beside your installer. With GnuPG installed:</p>
+    <pre><code>gpg --import presskeep-release-key.asc
+gpg --fingerprint 2EAB80C5475F4E31
+gpg --verify presskeep-SHA256SUMS.txt.asc presskeep-SHA256SUMS.txt
+sha256sum --ignore-missing -c presskeep-SHA256SUMS.txt</code></pre>
+    <p>The release key fingerprint is <code>BA76 65B2 2FE9 C3E3 C4FF 84AE 2EAB 80C5 475F 4E31</code>. Confirm a good signature and an <code>OK</code> checksum for your installer. GnuPG may say the key is not certified by a trusted signature; compare its full fingerprint with the one above.</p>
+  </main>
+</body>
+</html>

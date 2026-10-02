@@ -1,0 +1,3 @@
+dd48bb8f50223d4e87af66ae2d55cc80cd7715565f0904a0d5ccbe8655b70b0a  Presskeep_0.1.0_amd64.AppImage
+7e28ded2e664fa75262fc24bd7c07f63603f8e5870335c9574ede19140bfb5ea  Presskeep_0.1.0_amd64.deb
+c685c43d0c33234612bbbab63761db1616c4ffaaf7b4f1280ecfe8ef14e25ff0  Presskeep_0.1.0_universal.dmg
