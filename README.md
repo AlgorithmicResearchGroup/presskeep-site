@@ -2,7 +2,7 @@
 
 **Your words. Here to stay.**
 
-The public website and Mac download home for Presskeep, a desktop app for signed,
+The public website and purchase home for Presskeep, a desktop app for signed,
 portable publishing.
 
 Visit **https://algorithmicresearchgroup.github.io/presskeep-site/**.
@@ -23,9 +23,11 @@ Then visit `http://localhost:8000`.
 
 ## Downloads
 
-App builds and SHA-256 checksums appear in this repository's Releases section
-when ready. The Mac preview supports Apple Silicon and Intel Macs running
-macOS 11 or later. Release notes describe the signing and notarization status.
+Buy Presskeep for **US$9.99 once** at
+[the ARG store](https://store.arg.studio/#presskeep). After checkout, the store
+provides a private download for the signed and notarized universal Mac installer.
+It supports Apple Silicon and Intel Macs running macOS 11 or later. Installer
+checksums are linked from the purchase download page.
 
 ## Sample document
 
